@@ -6,18 +6,20 @@ const promptInput = document.querySelector(".prompt");
 const addPromptBtn = document.querySelector(".add-prompt");
 
 chrome.storage.local.get(["data", "favorites"]).then(result => {
-    const data = result.data;
-    const favs = result.favorites;
-
-    console.log('loaded data: ', result);
+    let data = result.data;
+    let favs = result.favorites;
 
     if (!data) {
+        data = {};
         chrome.storage.local.set({ data: {} });
     }
 
     if (!favs) {
+        favs = [];
         chrome.storage.local.set({ favs: [] });
     }
+    console.log('loaded data: ', result);
+
 
     if (data) {
         updateData();
