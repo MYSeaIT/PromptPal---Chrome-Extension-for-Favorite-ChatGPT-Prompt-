@@ -1,0 +1,62 @@
+.tag-cont {
+    background: rgb(243, 243, 243);
+    margin: 6px 0;
+    padding: 10px;
+    border-radius: 4px;
+}  
+
+.tag-title {
+    font-weight: bolder;
+}
+
+.prompt-cont {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.prompt-cont:nth-child(even) {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.prompt-txt {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.prompt-btn {
+    background: rgba(255, 255, 255, 0.6);
+    border: none;
+    cursor: pointer;
+    padding: 1px;
+}
+
+.prompt-btn:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.prompt-options {
+    display: flex;
+}
+ 
+.favorites {
+    padding: 10px;
+    border-radius: 4px;
+    margin: 6px 0;
+    background: rgb(255, 220, 169);
+}
+
+.fav-cont {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fav-cont:nth-child(even) {
+    background: rgba(0, 0, 0, 0.2);
+}
